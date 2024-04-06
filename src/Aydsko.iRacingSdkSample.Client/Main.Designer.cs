@@ -49,14 +49,14 @@ partial class Main
         textSessionStringDisplay = new TextBox();
         splitContainer1 = new SplitContainer();
         labelSessionStringHeader = new Label();
-        dataGridView1 = new DataGridView();
+        gridViewTelemetryVariables = new DataGridView();
         labelSessionVariables = new Label();
         menuStripMain.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
         splitContainer1.Panel1.SuspendLayout();
         splitContainer1.Panel2.SuspendLayout();
         splitContainer1.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)gridViewTelemetryVariables).BeginInit();
         SuspendLayout();
         // 
         // menuStripMain
@@ -177,8 +177,8 @@ partial class Main
         // 
         // textSessionStringDisplay
         // 
+        textSessionStringDisplay.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         textSessionStringDisplay.BackColor = SystemColors.Window;
-        textSessionStringDisplay.Dock = DockStyle.Bottom;
         textSessionStringDisplay.Font = new Font("Consolas", 10F);
         textSessionStringDisplay.Location = new Point(0, 34);
         textSessionStringDisplay.Multiline = true;
@@ -202,7 +202,7 @@ partial class Main
         // 
         // splitContainer1.Panel2
         // 
-        splitContainer1.Panel2.Controls.Add(dataGridView1);
+        splitContainer1.Panel2.Controls.Add(gridViewTelemetryVariables);
         splitContainer1.Panel2.Controls.Add(labelSessionVariables);
         splitContainer1.Size = new Size(784, 537);
         splitContainer1.SplitterDistance = 268;
@@ -218,14 +218,14 @@ partial class Main
         labelSessionStringHeader.TabIndex = 2;
         labelSessionStringHeader.Text = "Session String (YAML):";
         // 
-        // dataGridView1
+        // gridViewTelemetryVariables
         // 
-        dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dataGridView1.Dock = DockStyle.Bottom;
-        dataGridView1.Location = new Point(0, 35);
-        dataGridView1.Name = "dataGridView1";
-        dataGridView1.Size = new Size(784, 230);
-        dataGridView1.TabIndex = 4;
+        gridViewTelemetryVariables.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        gridViewTelemetryVariables.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        gridViewTelemetryVariables.Location = new Point(0, 35);
+        gridViewTelemetryVariables.Name = "gridViewTelemetryVariables";
+        gridViewTelemetryVariables.Size = new Size(784, 230);
+        gridViewTelemetryVariables.TabIndex = 4;
         // 
         // labelSessionVariables
         // 
@@ -245,6 +245,7 @@ partial class Main
         Controls.Add(splitContainer1);
         Controls.Add(menuStripMain);
         Margin = new Padding(2);
+        MinimumSize = new Size(100, 100);
         Name = "Main";
         Text = "iRacing SDK Sample";
         FormClosed += Main_FormClosed;
@@ -257,7 +258,7 @@ partial class Main
         splitContainer1.Panel2.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
         splitContainer1.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)gridViewTelemetryVariables).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -283,6 +284,6 @@ partial class Main
     private TextBox textSessionStringDisplay;
     private SplitContainer splitContainer1;
     private Label labelSessionStringHeader;
-    private DataGridView dataGridView1;
+    private DataGridView gridViewTelemetryVariables;
     private Label labelSessionVariables;
 }

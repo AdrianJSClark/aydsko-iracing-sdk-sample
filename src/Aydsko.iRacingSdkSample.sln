@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aydsko.iRacingSdkSample.Client", "Aydsko.iRacingSdkSample.Client\Aydsko.iRacingSdkSample.Client.csproj", "{57B3BC8B-D651-4BA1-91A3-EB7F400372C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aydsko.iRacingSdkSample.Client", "Aydsko.iRacingSdkSample.Client\Aydsko.iRacingSdkSample.Client.csproj", "{57B3BC8B-D651-4BA1-91A3-EB7F400372C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{983BEE20-55E4-4E1A-95E1-00E317AB7A25}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iRacingSdk", "iRacingSdk\iRacingSdk.csproj", "{B6C61DC2-703B-4304-A068-E8029F420702}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,10 @@ Global
 		{57B3BC8B-D651-4BA1-91A3-EB7F400372C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B3BC8B-D651-4BA1-91A3-EB7F400372C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B3BC8B-D651-4BA1-91A3-EB7F400372C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C61DC2-703B-4304-A068-E8029F420702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C61DC2-703B-4304-A068-E8029F420702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C61DC2-703B-4304-A068-E8029F420702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C61DC2-703B-4304-A068-E8029F420702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,12 +11,10 @@
   <PropertyGroup>
     <Authors>Adrian Clark</Authors>
     <Company>Adrian Clark</Company>
-    <Product>Aydsko iRacing Data API</Product>
-    <Title>Aydsko iRacing Data API</Title>
-    <Description>An access library for querying the iRacing "Data" API.</Description>
-    <Copyright>© 2023 Adrian Clark. "iRacing" is a trademark of iRacing.com Motorsport Simulations, LLC.</Copyright>
+    <Product>Aydsko iRacing SDK Sample</Product>
+    <Title>Aydsko iRacing SDK Sample</Title>
+    <Description>A sample app using the iRacing SDK C# files.</Description>
     <NeutralLanguage>en</NeutralLanguage>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(BUILD_BUILDNUMBER)'!=''">
@@ -29,7 +27,7 @@
 
   <ItemGroup>
     <AssemblyAttribute Include="System.CLSCompliantAttribute">
-      <_Parameter1>true</_Parameter1>
+      <_Parameter1>false</_Parameter1>
       <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
     </AssemblyAttribute>
   </ItemGroup>

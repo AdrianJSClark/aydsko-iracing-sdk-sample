@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>iRacing.com Motorsport Simulations</Company>
+    <Product>iRacing SDK</Product>
+    <Title>iRacing SDK C# Prototypes</Title>
+    <Copyright>© 2023 iRacing.com Motorsport Simulations, LLC</Copyright>
+  </PropertyGroup>
+</Project>
